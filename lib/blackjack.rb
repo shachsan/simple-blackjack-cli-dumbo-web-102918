@@ -47,7 +47,7 @@ def hit?(card)
   elsif user_entry == 'h'
     deal_card + card
 
-  end 
+  end
 
 end
 
@@ -61,4 +61,12 @@ end
 
 def runner
   # code runner here
+  welcome
+  initial_round
+  until initial_round>21
+    loop do
+      hit?(card)
+      display_card_total
+    end
+  end
 end
