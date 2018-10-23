@@ -13,7 +13,7 @@ def display_card_total(total)
     puts "Your cards add up to #{total}"
 end
 
-def prompt_user(n)
+def prompt_user
   # code #prompt_user here
   puts "Type 'h' to hit or 's' to stay"
 
