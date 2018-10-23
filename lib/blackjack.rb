@@ -69,4 +69,5 @@ def runner
       display_card_total
     end
   end
+  puts "Sorry, you hit 30. Thanks for playing!"
 end
