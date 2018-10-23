@@ -53,6 +53,7 @@ end
 
 def invalid_command
   # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
@@ -62,12 +63,12 @@ end
 def runner
   # code runner here
   welcome
-  initial_round
-  until initial_round>21
-    loop do
-      deal_card
-      display_card_total
-    end
+  total= initial_round
+
+  until card_total > 21
+    total = hit?(total)
+    display_card_total(total)
   end
-  end_game(initial_round)
+  end_game(total)
+  
 end
