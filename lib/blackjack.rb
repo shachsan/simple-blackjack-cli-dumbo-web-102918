@@ -69,5 +69,5 @@ def runner
       display_card_total
     end
   end
-  puts "Sorry, you hit 30. Thanks for playing!"
+  puts "Sorry, you hit #{initial_round}. Thanks for playing!"
 end
