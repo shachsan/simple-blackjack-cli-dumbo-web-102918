@@ -65,7 +65,7 @@ def runner
   initial_round
   until initial_round>21
     loop do
-      hit?(card)
+      deal_card(n)
       display_card_total
     end
   end
