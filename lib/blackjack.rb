@@ -33,9 +33,9 @@ def initial_round
   # code #initial_round here
   first_card=deal_card
   second_card=deal_card
-
-  return total=first_card+second_card
-# display_card_total(total)
+  total=first_card+second_card
+  display_card_total(total)
+  return total
 end
 
 def hit?
